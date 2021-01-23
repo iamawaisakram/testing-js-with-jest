@@ -1,3 +1,5 @@
+const childFunctionObj = require("./child-functions");
+
 function add(a, b) {
   return a + b;
 }
@@ -33,10 +35,20 @@ function asyncCallbackMergeThePassedObjects(obj1, obj2, cb) {
   }, 1000);
 }
 
+function parentFunction(a, b) {
+  return add(a, b) + 1;
+}
+
+function anotherParentFunction(a, b) {
+  return childFunctionObj.multiply(a, b) + 1;
+}
+
 module.exports = {
   add,
   mergeThePassedObjects,
   asyncPromiseMergeThePassedObjects,
   reverseArray,
   asyncCallbackMergeThePassedObjects,
+  parentFunction,
+  anotherParentFunction,
 };
