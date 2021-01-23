@@ -13,7 +13,7 @@ function reverseArray(arr) {
   return arr.reverse();
 }
 
-function asyncMergeThePassedObjects(obj1, obj2) {
+function asyncPromiseMergeThePassedObjects(obj1, obj2) {
   return new Promise(function (resolve, reject) {
     setTimeout(function () {
       resolve({
@@ -24,9 +24,19 @@ function asyncMergeThePassedObjects(obj1, obj2) {
   });
 }
 
+function asyncCallbackMergeThePassedObjects(obj1, obj2, cb) {
+  setTimeout(function () {
+    cb({
+      ...obj2,
+      ...obj1,
+    });
+  }, 1000);
+}
+
 module.exports = {
   add,
   mergeThePassedObjects,
-  asyncMergeThePassedObjects,
+  asyncPromiseMergeThePassedObjects,
   reverseArray,
+  asyncCallbackMergeThePassedObjects,
 };
