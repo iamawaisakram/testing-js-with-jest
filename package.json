@@ -1,0 +1,25 @@
+{
+  "name": "testing-js-with-jest",
+  "version": "1.0.0",
+  "description": "Testing JS with Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamawaisakram/testing-js-with-jest.git"
+  },
+  "keywords": [
+    "test-js"
+  ],
+  "author": "Awais Mughal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamawaisakram/testing-js-with-jest/issues"
+  },
+  "homepage": "https://github.com/iamawaisakram/testing-js-with-jest#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
