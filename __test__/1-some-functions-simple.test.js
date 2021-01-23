@@ -1,4 +1,3 @@
-const { TestScheduler } = require("jest");
 const someFunctionOj = require("../javascript-testing/some-functions");
 
 test("1-some-functions-simple testing add", function () {
